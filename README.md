@@ -111,4 +111,45 @@ child: InkWell(
             );
         },
 ```
+========================================================================================
+Tugas 8 Muhammad Fadhlan Arradhi - 2306240061
 
+1. 
+const digunakan untuk mendefinisikan nilai yang tidak berubah (immutable). Ketika suatu widget atau objek ditandai dengan const, artinya widget tersebut tidak akan berubah sepanjang siklus hidupnya. Keuntungan menggunakan const adalah meningkatkan performa aplikasi karena widget tidak perlu dibangun ulang (rebuild) saat rendering ulang. const juga menghemat memori karena Flutter akan berbagi instans dari objek yang sama jika const digunakan. Sebaiknya gunakan const saat suatu widget atau objek tidak membutuhkan perubahan, seperti teks atau ikon yang bersifat statis. Namun, hindari menggunakan const jika nilai tersebut akan berubah seiring waktu atau bergantung pada data dinamis.
+
+2.
+Column dan Row adalah layout widget yang memungkinkan kamu mengatur posisi widget secara vertikal dan horizontal. Column digunakan untuk menyusun widget secara vertikal (ke bawah). Widget ini cocok digunakan untuk membuat layout berlapis-lapis atau susunan elemen yang bertumpuk ke bawah. Row digunakan untuk menyusun widget secara horizontal (ke samping). Widget ini cocok untuk menampilkan elemen yang berjajar satu garis.
+
+Contoh implementasi:
+
+```bash
+Column:
+dart
+Copy code
+Column(
+  children: [
+    Text("Item 1"),
+    Text("Item 2"),
+    Text("Item 3"),
+  ],
+)
+Row:
+dart
+Copy code
+Row(
+  children: [
+    Icon(Icons.star),
+    Text("Rating"),
+    Icon(Icons.star),
+  ],
+)
+```
+
+3.
+Pada form tugas kali ini, saya menggunakan elemen input seperti TextFormField untuk input teks, DropdownButtonFormField untuk pilihan dropdown, dan ElevatedButton untuk mengirim data. Elemen input lain yang tersedia di Flutter, tetapi tidak digunakan dalam tugas ini, meliputi Checkbox, Switch, Radio, Slider, DatePicker, dan TimePicker. Elemen-elemen ini bisa digunakan sesuai kebutuhan, misalnya Switch untuk opsi on/off atau Slider untuk memilih nilai dalam rentang tertentu.
+
+4.
+Untuk mengatur tema dalam aplikasi Flutter agar konsisten, kita dapat menggunakan ThemeData pada MaterialApp untuk mendefinisikan warna utama, gaya teks, dan gaya tombol yang berlaku di seluruh aplikasi. Dengan cara ini, setiap elemen UI yang menggunakan tema akan otomatis mengikuti gaya yang telah diatur, sehingga tampilan aplikasi menjadi seragam. Berdasarkan kode saya, pada di file main.dart, saya sudah mulai menerapkan tema dasar dengan ThemeData. Saat ini, pengaturan temanya masih minimal, dan lebih fokus pada warna default (colorScheme) tanpa detail untuk elemen spesifik seperti textTheme atau buttonTheme.
+
+5.
+saya mengatur navigasi di aplikasi ini menggunakan Navigator.push dan Navigator.pushReplacement untuk berpindah ke halaman baru, dan Navigator.pop untuk kembali ke halaman sebelumnya. saya juga menggunakan Drawer di left_drawer.dart sebagai cara untuk mengakses halaman-halaman tertentu dengan cepat. Pendekatan ini memungkinkan pengguna untuk membuka halaman tambahan dari menu samping (drawer) dan kembali ke halaman utama dengan menutup halaman saat ini.

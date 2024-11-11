@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wemart/menu.dart';
+import 'package:wemart/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
