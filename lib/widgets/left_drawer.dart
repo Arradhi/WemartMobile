@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wemart/screens/menu.dart';
 import 'package:wemart/screens/productentry_form.dart';
+import 'package:wemart/screens/list_productentry.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -17,7 +18,7 @@ class LeftDrawer extends StatelessWidget {
     child: const Column(
       children: [
         Text(
-          'Mental Health Tracker',
+          'Wemart',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24,
@@ -51,16 +52,16 @@ class LeftDrawer extends StatelessWidget {
     },
   ),
   ListTile(
-    leading: const Icon(Icons.mood),
-    title: const Text('Tambah Produk'),
-    // Bagian redirection ke ProductEntryFormPage
-    onTap: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => ProductEntryFormPage()),
-      );
-    },
-  ),
+            leading: const Icon(Icons.add_reaction_rounded),
+            title: const Text('Tambahkan Produk'),
+            onTap: () {
+              // Route menu ke halaman mood
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductEntryPage()),
+              );
+            },
+          ),
         ],
       ),
     );

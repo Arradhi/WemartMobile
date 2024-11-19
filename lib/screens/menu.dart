@@ -25,7 +25,7 @@ final List<ItemHomepage> items = [
         
         // Judul aplikasi "Mental Health Tracker" dengan teks putih dan tebal.
         title: const Text(
-          'Mental Health Tracker',
+          'Wemart',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
