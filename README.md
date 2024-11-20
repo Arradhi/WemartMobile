@@ -281,7 +281,7 @@ Django menghapus cookie sesi pengguna
 Flutter mengarahkan pengguna kembali ke halaman login
 
 
-5.
+6.
 Langkah 1: Membuat Django App Baru untuk Autentikasi
 Buat App Baru: Jalankan perintah untuk membuat aplikasi authentication:
 
